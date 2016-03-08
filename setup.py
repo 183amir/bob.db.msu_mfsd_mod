@@ -8,9 +8,13 @@ from setuptools import setup, find_packages
 # Define package version
 version = open("version.txt").read().rstrip()
 
-# The only thing we do in this file is to call the setup() function with all
+# The only thing we do in this file is to call the setup(
+    namespace_packages=['bob'],
+) function with all
 # parameters that define our package.
 setup(
+    namespace_packages=['bob'],
+
 
     name='bob.db.msu_mfsd_mod',
     version=version,
